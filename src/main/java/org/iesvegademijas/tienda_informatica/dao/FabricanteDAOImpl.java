@@ -26,7 +26,7 @@ public class FabricanteDAOImpl  implements FabricanteDAO{
 	}
 
 	/**
-	 * Devuelve lista con todos loa fabricantes.
+	 * Devuelve lista con todos los fabricantes.
 	 */
 	@Override
 	public List<Fabricante> getAll() {
