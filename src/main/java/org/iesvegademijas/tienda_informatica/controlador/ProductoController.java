@@ -1,6 +1,5 @@
 package org.iesvegademijas.tienda_informatica.controlador;
 
-import org.iesvegademijas.tienda_informatica.modelo.Fabricante;
 import org.iesvegademijas.tienda_informatica.modelo.Producto;
 import org.iesvegademijas.tienda_informatica.servicio.ProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +42,7 @@ public class ProductoController {
         return "crear-producto";
     }
 
-    @GetMapping("/productos/crear")
+    @PostMapping("/productos/crear")
     public RedirectView submitCrear(@ModelAttribute("producto") Producto producto) {
         productoService.newProducto(producto);
 
@@ -71,10 +70,5 @@ public class ProductoController {
         productoService.deleteProducto(id);
 
         return new RedirectView("/productos");
-    }
-
-    @GetMapping("/test")
-    public String test() {
-        return "test";
     }
 }
