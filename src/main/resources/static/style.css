@@ -588,6 +588,10 @@ video {
   }
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .float-right {
   float: right;
 }
@@ -609,6 +613,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .w-1\/2 {
@@ -635,10 +643,22 @@ video {
   flex-basis: 33.333333%;
 }
 
+.basis-1\/5 {
+  flex-basis: 20%;
+}
+
+.basis-1\/4 {
+  flex-basis: 25%;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -653,8 +673,16 @@ video {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .rounded {
