@@ -651,6 +651,10 @@ video {
   flex-basis: 25%;
 }
 
+.basis-1 {
+  flex-basis: 0.25rem;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
